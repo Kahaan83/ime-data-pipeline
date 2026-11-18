@@ -2,11 +2,11 @@
 
 A collection of Python utilities for cleaning, combining, ranking, and re-classifying
 company-level financial data (CMIE-style) and India's foreign-trade (TradeStat) data,
-built for analysis at the **Institute of Manufacturing and Economy (IME)**.
+built for analysis at the **Institute of Manufacturing and Economy  (IME)**.
 
 The toolkit covers three stages of a typical workflow:
 
-1. **Combine** raw company financial extracts into a single master dataset (`combiner.py`)
+1. **Combine** raw company financial extracts  into a single master dataset (`combiner.py`)
 2. **Rank** companies by sales within chosen sectors and years (`filter_top_companies.py`)
 3. **Map** India's HS-code-level trade data to ISIC/NIC manufacturing sectors and build
    multi-year sector summaries (`hs_sector_mapper_vsc.py`)
@@ -58,7 +58,7 @@ The script:
 
 ### Usage
 
-Interactive mode (prompts for file paths and NIC codes):
+Interactive mode (prompts for file paths and NIC codes) :
 
 ```bash
 python combiner.py
@@ -88,7 +88,7 @@ python combiner.py --nic 10,11,12 --output food_agro.csv
 
 ---
 
-## 2. `filter_top_companies.py` — Rank companies by sales
+## 2. `filter_top_companies.py` — Rank companies by sales    
 
 Takes a combined company-sales file (ideally the output of step 1, exported to
 `combined_company_sales.xlsx`) and produces a **Top-N companies** ranking per NIC
@@ -106,7 +106,7 @@ code/sector, across one or more financial years.
 
 ### Usage
 
-Interactive mode (prompts for everything):
+Interactive mode (prompts for everything) :
 
 ```bash
 python filter_top_companies.py
@@ -130,7 +130,7 @@ python filter_top_companies.py --csv --sector "Pharma" --nic "21" --years 2018-2
 
 ### Key arguments
 
-| Flag | Description |
+| Flag | Description |  
 |---|---|
 | `--file` | Path to the input `.xlsx`/`.csv` (default: prompts, or `combined_company_sales.xlsx`) |
 | `--csv` | Use/create a CSV cache next to the input file for faster reloads |
